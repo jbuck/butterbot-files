@@ -1,0 +1,21 @@
+{
+  "repo": "mozilla/butter",
+  "name": "Bot.io (butyr.org)",
+  "script_timeout": 80,
+  "private_dir": "./private",
+  "public_dir": "./public",
+  "port": 8000,
+  "use_queue": true,
+  "host": "butyr.org",
+  "whitelist": [
+    "benrito",
+    "butterbot",
+    "cadecairos",
+    "dseif",
+    "humphd",
+    "jbuck",
+    "rwldrn",
+    "secretrobotron"
+  ]
+}
+
