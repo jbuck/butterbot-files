@@ -1,12 +1,13 @@
 {
   "repo": "mozilla/butter",
   "name": "Bot.io (butyr.org)",
+  "handle": "botio",
   "script_timeout": 80,
   "private_dir": "./private",
   "public_dir": "./public",
   "port": 8000,
   "use_queue": true,
-  "host": "butyr.org",
+  "host": "botio.butyr.org",
   "whitelist": [
     "benrito",
     "butterbot",
@@ -15,9 +16,11 @@
     "dseif",
     "humphd",
     "jbuck",
+    "mjschranz",
     "rwldrn",
     "secretrobotron",
     "k88hudson",
+    "stanica",
     "ScottDowne"
   ]
 }
