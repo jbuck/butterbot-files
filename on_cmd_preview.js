@@ -20,9 +20,18 @@ if (config[key]) {
   } 
 }
 
-// Start the server asynchronously
 cd(botio.public_dir);
 cd('cornfield');
+
+// Override the server hostname for publishing to work correctly
+var override = {
+  dirs: {
+    hostname: "http://" + key
+  }
+};
+JSON.stringify(override, null, 2).to('config/betty.json');
+
+// Start the server asynchronously
 exec('PORT=0 nohup node app.js < /dev/null > nohup.out 2>&1 &');
 
 // Check to see if the server started successfully
