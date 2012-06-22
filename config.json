@@ -2,7 +2,7 @@
   "repo": "mozilla/butter",
   "name": "Bot.io (butyr.org)",
   "handle": "botio",
-  "script_timeout": 80,
+  "script_timeout": 120,
   "private_dir": "./private",
   "public_dir": "./public",
   "port": 8000,
