@@ -36,7 +36,7 @@ setTimeout(function() {
   }
   
   var port = m[1];
-  exec('configurator add pr' + botio.issue + '.butyr.org=localhost:' + port);
-  botio.message('Server is running on http://pr' + botio.issue + '.butyr.org/templates/test.html');
+  exec('configurator add ' + key + '=localhost:' + port);
+  botio.message('Server is running on http://' + key + '/templates/test.html');
   exit(0);
 }, 2000);
