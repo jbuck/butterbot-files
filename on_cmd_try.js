@@ -25,7 +25,7 @@ var postRequest = http.request( postOptions, function( result ) {
   result.on( 'data', function( chunk ) {
     botio.message( chunk );
   });
-  result.on( "end", function () {
+  result.on( 'end', function () {
     exit( 0 );
   });
 })
