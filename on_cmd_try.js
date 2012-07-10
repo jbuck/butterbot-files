@@ -24,9 +24,11 @@ var postRequest = http.request( postOptions, function( result ) {
   result.setEncoding( 'utf8' );
   result.on( 'data', function( chunk ) {
     botio.message( chunk );
-    exit(0);
   });
-});
+  result.on( "end", function () {
+    exit( 0 );
+  });
+})
 
 postRequest.write( postData );
 postRequest.end();
