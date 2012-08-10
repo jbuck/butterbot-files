@@ -47,5 +47,6 @@ setTimeout(function() {
   var port = m[1];
   exec('configurator add ' + key + '=localhost:' + port);
   botio.message('Server is running on http://' + key + '/templates/basic/');
+  botio.message('Run the Test Suite: http://' + key + '/test/');
   exit(0);
 }, 2000);
