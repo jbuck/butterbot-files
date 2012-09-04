@@ -7,6 +7,6 @@ var o = exec('node make check').output;
 
 // Unless we get any console spew, and therefore an error,
 // this run passed.
-if (o === "") {
+if (o) {
   exit(1);
 }
